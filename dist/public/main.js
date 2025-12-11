@@ -20,7 +20,7 @@
                 label = label.slice(noExt.length)
             label = label.replace(/^[-. ]+/, '')
             label ||= "unknown"
-            return { label, src: e.uri + (e.ext === 'vtt' ? '' : '?get=vtt') }
+            return { label, ext: e.ext, name: e.name, src: e.uri + (e.ext === 'vtt' ? '' : '?get=vtt') }
         }
 
         const btnStyle = { fontSize: 'small' }
