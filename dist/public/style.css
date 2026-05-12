@@ -1,7 +1,6 @@
 #root .file-show .showing {
     max-height: calc(100% - 3em); /* space for buttons */
 }
-
 video::cue {
   background-color: transparent;
   -webkit-text-stroke: 2px black;
@@ -14,4 +13,7 @@ video::cue {
     -2px -2px 0px black,
     2px -2px 0px black,
     -2px 2px 0px black;
+}
+video::-webkit-media-text-track-display {
+  transform: translateY(-50px);
 }
